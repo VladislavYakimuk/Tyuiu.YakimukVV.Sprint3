@@ -1,4 +1,5 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint3;
+using System;
 
 namespace Tyuiu.YakimukVV.Sprint3.Task0.V4.Lib
 {
@@ -7,11 +8,14 @@ namespace Tyuiu.YakimukVV.Sprint3.Task0.V4.Lib
         public double GetMultiplySeries(int startValue, int stopValue)
         {
             double product = 1;
+            double sinValue = Math.Sin(0.1);
+
             for (int k = startValue; k <= stopValue; k++)
             {
-                product *= Math.Sin(1) + k;
+                product *= sinValue + k;
             }
-            return product;
+
+            return Math.Round(product, 3);
         }
     }
 }

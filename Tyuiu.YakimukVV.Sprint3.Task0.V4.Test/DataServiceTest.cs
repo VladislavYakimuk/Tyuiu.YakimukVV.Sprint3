@@ -15,7 +15,7 @@ namespace Tyuiu.YakimukVV.Sprint3.Task0.V4.Test
 
             double result = service.GetMultiplySeries(startValue, stopValue);
 
-            Assert.AreEqual(1336.306, result, 0.001); 
+            Assert.AreEqual(6482.439, result, 0.001); 
         }
     }
 }
